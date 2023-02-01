@@ -1,0 +1,86 @@
+body {
+    width: 100%;
+    height: 100vh;
+    perspective: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('https://1.bp.blogspot.com/-rTTnxWmr9YE/Xhi5CDVIETI/AAAAAAAAnS8/idtXhJ-IrsIYyMVdEneesmepsW2MGTlrACNcBGAsYHQ/s1600/SaintcatherineMount-winter-1.jpg');
+    background-size: cover;
+  }
+
+  .card {
+    transform-style: preserve-3d;
+    position: relative;
+    width: 275px;
+    height:325px;
+    cursor: pointer;
+    transition:all 2s;
+  }
+
+  h1 {
+    font-size: 35px;
+    margin-top: 80px;
+    color: white;
+  }
+
+h5{
+    margin-top: -20px;
+}
+
+h4{
+    margin-top: -2px;
+}
+
+  p {
+    font-size: 12px;
+  }
+
+  img{
+    margin-top: 60px;
+    width: 90px;
+    transform: scaleX(-1);
+  }
+
+  .page, .front {
+    background: url('https://photo.designxel.com/static/vector/2015/8/22/facegfx-vector-red-spotlight-stage-background-vector.jpg') no-repeat center darkred;
+    background-size: cover;
+  }
+
+  .message {
+    margin-top: 20px;
+    color: #000 ;
+  }
+
+  .front, .back, .page {
+    transform-style: preserve-3d;
+    transform-origin: left center;
+    transition: transform .5s ease-in-out, box-shadow .5s ease-in-out;
+    position: absolute;
+    width: 120px;
+    height: 100%;
+    top: 0; 
+    left: 0;
+    background-color: #F7F7F7;
+    padding: 40px 40px 20px;
+  }
+
+  .card:hover .front {
+    transform: rotateY(-160deg);
+    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+  }
+
+  .card:hover{
+    transform: translate(125px);
+  }
+
+  .card:hover .page {
+    transform: rotateY(-159deg);
+    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+  }
+
+  .card:hover .back {
+    transform: rotateY(-20deg);
+    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+  }
